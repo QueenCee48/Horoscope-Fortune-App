@@ -1,0 +1,91 @@
+* { font-family: "Comic Sans MS", cursive; }
+
+body {
+    text-align: center;
+    background-image: url("https://wallpapers.com/images/hd/seamless-background-3000-x-1500-x7zam0o9zrz2ljx4.jpg");
+    background-repeat: repeat-y;
+    text-shadow: 0px 0px 3px #a1daf9, 0px 0px 5px #0000FF;
+    color: #a1daf9;
+}
+
+main {
+    background-color: rgba(188, 189, 243, 0.5);
+    position: relative;
+    top: 30%;
+    border: 1px solid;
+    border-radius: 5px;
+    min-width: 540px;
+    max-width: 50%;
+    margin: auto;
+    padding: 2em;
+}
+
+#horoscope-wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+}
+
+h1 { margin-bottom: 20px; }
+
+#search {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 40%;
+    height: 35px;
+}
+
+#submit {
+    border-radius: 0 5px 5px 0;
+    border: none;
+    padding: 18px;
+    font-size: 16px;
+    width: 8em;
+    cursor: pointer;
+    background-color: #a1daf9;
+}
+
+#submit:hover { background-color: cornflowerblue; }
+
+.zodiac-ring {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border: 8px dotted #ecebeb;
+    border-radius: 50%;
+    position: relative;
+}
+
+.stone {
+    width: 125px;
+    height: 125px;
+    background-color: #ccc; /* Default color*/
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.5s ease-in-out;
+}
+
+#zodiac-sign {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    position: absolute;
+    left: 8.5%;
+    transition: top 0.2s ease-in-out;
+}
+
+#horoscope-data {
+    border-radius: 5px;
+    padding: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.5s ease-in-out;
+}
